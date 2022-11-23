@@ -1,0 +1,26 @@
+:root {
+  --bg_primary: #333333;
+  --bg_highlight--primary: #0436b9;
+  --bg_highlight--secondary: #d3a24d;
+  --fg_primary: #ffffff;
+  --fg_secondary: #9da8be;
+
+  --size_xs: 0.4rem;
+  --size_sm: 0.8rem;
+  --size_md: 1rem;
+  --size_lg: 2rem;
+  --size_xl: 3rem;
+  --size_xxl: 4rem;
+
+  --font_titles: "Merriweather", serif;
+  --font_texts: "Montserrat", sans-serif;
+
+  --mon_extra_light: 200;
+  --mon_regular: 400;
+  --mon_semibold: 600;
+  --mon_bold: 700;
+  --mer_light: 300;
+  --mer_regular: 400;
+  --mer_bold: 700;
+  --mer_black: 900;
+}

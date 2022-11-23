@@ -1,0 +1,231 @@
+/*----------------------------------------------------------------------------- 
+Screen Stylesheet 
+
+version:   1.0 
+date:      11/23/2022 
+author:    Bruno Garcia 
+email:     brunogarcia84@gmail.com 
+website:   https://brunogarciadigitalresume.netlify.app/
+version history: [location of file]
+*/
+
+/* General Rules */
+
+@import url(./reset.css);
+@import url(./variables.css);
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@200;400;600;700&display=swap");
+
+body {
+  font-size: 16px;
+  background-color: var(--bg_primary);
+  color: var(--fg_primary);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: var(--size_xl);
+  font-weight: var(--mer_bold);
+  font-family: var(--font_titles);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font_titles);
+}
+
+h2 {
+  font-size: var(--size_lg);
+  font-weight: var(--mer_semibold);
+}
+
+h3 {
+  font-size: var(--size_lg);
+  font-weight: var(--mer_regular);
+}
+
+h4 {
+  font-size: var(--size_md);
+  font-weight: var(--mer_regular);
+}
+
+h5 {
+  font-size: var(--size_sm);
+  font-weight: var(--mer_regular);
+}
+
+h6 {
+  font-size: var(--size_xs);
+  font-weight: var(--mer_extralight);
+}
+
+p,
+span,
+a,
+ul,
+ol {
+  font-size: var(--size_sm);
+  font-weight: var(--mon_regular);
+  font-family: var(--font_texts);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    ". . . search"
+    "highlights highlights highlights highlights"
+    "recommended recommended recommended recommended"
+    "footer footer footer footer";
+  gap: 50px;
+  width: 95%;
+  margin: var(--size_md) auto;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "search search search search"
+      "highlights highlights highlights highlights"
+      "recommended recommended recommended recommended"
+      "footer footer footer footer";
+    gap: 30px;
+    width: 85%;
+  }
+}
+
+/* Header */
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--size_lg);
+  padding: var(--size_lg);
+  box-shadow: 2px 2px 10px var(--bg_highlight--secondary);
+}
+
+.header__logo a {
+  font-size: var(--size_lg);
+  color: var(--bg_highlight--secondary);
+}
+
+.header__list {
+  display: flex;
+}
+
+.list__item {
+  margin: var(--size_md);
+}
+
+.list__item:hover {
+  border-bottom: 4px solid var(--bg_highlight--secondary);
+  margin-bottom: var(--size_xs);
+}
+
+@media screen and (max-width: 480px) {
+  .header__logo a {
+    font-size: var(--size_sm);
+  }
+
+  .header__list {
+    display: none;
+  }
+}
+
+/* Search */
+
+.search {
+  grid-area: search;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search__input {
+  border: none;
+  background-color: var(--fg_secondary);
+  box-shadow: 1px 1px 10px var(--fg_secondary);
+  color: var(--fg_primary);
+  padding: var(--size_sm);
+  border-radius: var(--size_xs);
+}
+
+@media screen and (max-width: 480px) {
+  .search__input {
+    display: block;
+    width: 40%;
+  }
+}
+
+/* Content */
+
+.content {
+  grid-area: highlights;
+}
+
+/* Highlights */
+
+.highlights {
+  border: 1px solid red;
+  margin: var(--size_lg) 0;
+}
+
+.highlights__image img {
+  width: 250px;
+  height: 400px;
+  display: block;
+  margin: var(--size_md) auto;
+  transition: ease-in-out 0.5s;
+}
+
+.highlights__image img:hover {
+  outline: 2px outset var(--bg_highlight--secondary);
+}
+
+.highlights__news {
+  display: block;
+  max-width: 250px;
+  border: 1px solid var(--fg_secondary);
+  padding: var(--size_md);
+  margin: var(--size_md) auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .movies__heading,
+  .movies__description {
+    font-size: var(--size_lg);
+    text-align: center;
+    padding: var(--size_sm);
+  }
+
+  .movies__description {
+    font-size: var(--size_md) !important;
+  }
+}
+
+/* Recommended */
+
+.recommended {
+  grid-area: recommended;
+}
+
+/* Footer */
+
+.footer {
+  grid-area: footer;
+  border: 1px solid white;
+}
+
+/* Breakpoint 480px */
+
+/* Breakpoint 768px */
+
+/* Breakpoint 1024px */
