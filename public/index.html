@@ -21,6 +21,10 @@
           <li class="list__item"><a href="#">New Movies</a></li>
         </ul>
       </nav>
+
+      <figure class="header__barMenu">
+        <img src="./img/menu.png" alt="" />
+      </figure>
     </header>
 
     <div class="container">
@@ -31,54 +35,78 @@
 
       <main class="content">
         <section class="highlights">
-          <figure class="highlights__image">
-            <img src="./img/die_hard.jpg" alt="Highlighted Movie #1" />
-            <span class="highlights__news"> New Movie </span>
-          </figure>
+          <div class="block">
+            <figure class="highlights__image highlights__image--one">
+              <img src="./img/die_hard.jpg" alt="Highlighted Movie #1" />
+              <span class="highlights__news highlights__news--one">
+                New Movie
+              </span>
+            </figure>
 
-          <article class="highlights__movies">
-            <h1 class="movies__heading">Title of Movie #1</h1>
-            <p class="movies__description">Description text for movie #1</p>
-          </article>
+            <article class="highlights__movies">
+              <h1 class="movies__heading movies__heading--one">
+                Title of Movie #1
+              </h1>
+              <p class="movies__description movies__description--one">
+                Description text for movie #1
+              </p>
+            </article>
+          </div>
 
-          <figure class="highlights__image">
-            <img src="./img/die_hard.jpg" alt="Highlighted Movie #2" />
-            <span class="highlights__news">New Movie</span>
-          </figure>
+          <div class="block">
+            <figure class="highlights__image highlights__image--two">
+              <img src="./img/die_hard.jpg" alt="Highlighted Movie #2" />
+              <span class="highlights__news highlights__news--two"
+                >New Movie</span
+              >
+            </figure>
 
-          <article class="highlights__movies">
-            <h1 class="movies__heading">Title of Movie #2</h1>
-            <p class="movies__description">Description text for movie #2</p>
-          </article>
+            <article class="highlights__movies">
+              <h1 class="movies__heading movies__heading--two">
+                Title of Movie #2
+              </h1>
+              <p class="movies__description movies__description--two">
+                Description text for movie #2
+              </p>
+            </article>
+          </div>
         </section>
 
         <section class="recommended">
-          <figure class="recommended__image">
-            <img src="#" alt="Recommended Movie #1" />
-            <span class="recommended__flag">Recommended</span>
-          </figure>
+          <div class="block">
+            <div class="block--modif">
+              <figure class="recommended__image">
+                <img src="./img/bruce_willis.jpg" alt="Recommended Movie #1" />
+                <span class="recommended__flag">Recommended</span>
+              </figure>
 
-          <artcile class="recommended__title">
-            <h2>Recommended Title #1</h2>
-          </artcile>
+              <artcile class="recommended__title">
+                <h2>Recommended Title #1</h2>
+              </artcile>
+            </div>
 
-          <figure class="recommended__image">
-            <img src="#" alt="Recommended Movie #2" />
-            <span class="recommended__flag">Recommended</span>
-          </figure>
+            <div class="block--modif">
+              <figure class="recommended__image">
+                <img src="./img/arnold.jpg" alt="Recommended Movie #2" />
+                <span class="recommended__flag">Recommended</span>
+              </figure>
 
-          <artcile class="recommended__title">
-            <h2>Recommended Title #2</h2>
-          </artcile>
+              <artcile class="recommended__title">
+                <h2>Recommended Title #2</h2>
+              </artcile>
+            </div>
 
-          <figure class="recommended__image">
-            <img src="#" alt="Recommended Movie #3" />
-            <span class="recommended__flag">Recommended</span>
-          </figure>
+            <div class="block--modif">
+              <figure class="recommended__image">
+                <img src="./img/sly.jpg" alt="Recommended Movie #3" />
+                <span class="recommended__flag">Recommended</span>
+              </figure>
 
-          <artcile class="recommended__title">
-            <h2>Recommended Title #3</h2>
-          </artcile>
+              <artcile class="recommended__title">
+                <h2>Recommended Title #3</h2>
+              </artcile>
+            </div>
+          </div>
         </section>
       </main>
     </div>
