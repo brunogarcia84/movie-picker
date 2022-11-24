@@ -219,6 +219,15 @@ ol {
   padding: var(--size_md);
   margin: var(--size_md) auto;
   text-align: center;
+
+  transition: ease-in-out 0.5s;
+}
+
+.highlights__news:hover,
+.recommended__flag:hover {
+  background-color: var(--fg_secondary);
+  color: var(--bg_primary);
+  font-weight: var(--mon_bold);
 }
 
 @media screen and (max-width: 480px) {

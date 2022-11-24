@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body onload="test();">
     <header class="header">
       <h4 class="header__logo">
         <a href="index.html">Movie Picker</a>
@@ -38,7 +38,10 @@
           <div class="block">
             <figure class="highlights__image highlights__image--one">
               <img src="./img/die_hard.jpg" alt="Highlighted Movie #1" />
-              <span class="highlights__news highlights__news--one">
+              <span
+                class="highlights__news highlights__news--one"
+                onmouseover="myEvent();"
+              >
                 New Movie
               </span>
             </figure>
@@ -56,7 +59,9 @@
           <div class="block">
             <figure class="highlights__image highlights__image--two">
               <img src="./img/die_hard.jpg" alt="Highlighted Movie #2" />
-              <span class="highlights__news highlights__news--two"
+              <span
+                class="highlights__news highlights__news--two"
+                onmouseover="myEvent();"
                 >New Movie</span
               >
             </figure>
@@ -114,5 +119,75 @@
     <footer class="footer">
       <span class="copyright">&#169; 2022 - All Rights Reserved</span>
     </footer>
+
+    <script>
+      function test() {
+        const movies = [
+          {
+            id: 1,
+            name: "Die Hard",
+            year: 1988,
+          },
+
+          {
+            id: 2,
+            name: "Die Hard 2",
+            year: 1990,
+          },
+
+          {
+            id: 3,
+            name: "Die Hard With a Vengeance",
+            year: 1995,
+          },
+
+          {
+            id: 4,
+            name: "Live Free or Die Hard",
+            year: 2007,
+          },
+
+          {
+            id: 5,
+            name: "A Good Day to Die Hard",
+            year: 2013,
+          },
+
+          {
+            id: 6,
+            name: "Lethal Weapon",
+            year: 1987,
+          },
+
+          {
+            id: 7,
+            name: "Lethal Weapon 2",
+            year: 1989,
+          },
+
+          {
+            id: 8,
+            name: "Lethal Weapon 3",
+            year: 1992,
+          },
+
+          {
+            id: 9,
+            name: "Lethal Weapon 4",
+            year: 1998,
+          },
+        ];
+
+        setTimeout(() => {
+          const random = Math.floor(Math.random() * 9 + 1);
+
+          const letsWatch = movies.filter((movie) => {
+            movie.id === random
+              ? alert(`Today's suggestion: ${movie.name} from ${movie.year}`)
+              : "";
+          });
+        }, 5000);
+      }
+    </script>
   </body>
 </html>
