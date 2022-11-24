@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Die Hard",
+    "year": 1988
+  },
+  {
+    "id": 2,
+    "name": "Die Hard 2",
+    "year": 1990
+  },
+  {
+    "id": 3,
+    "name": "Die Hard With a Vengeance",
+    "year": 1995
+  },
+  {
+    "id": 4,
+    "name": "Live Free or Die Hard",
+    "year": 2007
+  },
+  {
+    "id": 5,
+    "name": "A Good Day to Die Hard",
+    "year": 2013
+  },
+  {
+    "id": 6,
+    "name": "Lethal Weapon",
+    "year": 1987
+  },
+  {
+    "id": 7,
+    "name": "Lethal Weapon 2",
+    "year": 1989
+  },
+  {
+    "id": 8,
+    "name": "Lethal Weapon 3",
+    "year": 1992
+  },
+  {
+    "id": 9,
+    "name": "Lethal Weapon 4",
+    "year": 1998
+  }
+]
