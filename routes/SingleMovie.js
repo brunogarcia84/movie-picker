@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
   const found = movies.some((movie) => movie.id === random);
 
   if (found) {
-    res.json(movies.filter((movie) => movie.id === random));
+    res.send(movies.filter((movie) => movie.id === random));
   } else {
     res.status(400);
     send({ msg: `Film not found: ${random}` });
